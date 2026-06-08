@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshit | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">H<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/resume" class="btn-resume" download>Resume ↓</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="badge">Available for opportunities</span>
+        <h1>Harshit<br/><span class="accent">Builds Things</span><br/>for the Web.</h1>
+        <p class="hero-sub">Full Stack Developer & AI/ML Enthusiast. B.Tech CSE '26 from G.L. Bajaj, Greater Noida. Currently interning at <strong>Thiranex</strong> — building intelligent, scalable products.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Get in touch →</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar-inner">H</div>
+        </div>
+        <div class="floating-tag tag1">React 18</div>
+        <div class="floating-tag tag2">FastAPI</div>
+        <div class="floating-tag tag3">AI/ML</div>
+        <div class="floating-tag tag4">Node.js</div>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll down ↓</div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">04 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p>Open for full-time roles, freelance, and collaboration. Drop a message and I'll get back within 24 hours.</p>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" class="contact-link">GitHub ↗</a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-link">LinkedIn ↗</a>
+            <a href="mailto:harshit@email.com" class="contact-link">Email ↗</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="priya@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submit-btn">Send Message →</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Built by <strong>Harshit</strong> · 2026 · React | Node.js | PostgreSQL</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
